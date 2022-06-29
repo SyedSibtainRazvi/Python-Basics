@@ -19,3 +19,29 @@ def factorial(n):
 
 
 print(factorial(5))
+
+
+print("3) Printing lists")
+
+l = [1,5,10,15,20,25,30]
+
+odd_elements = l[1::2]
+print(odd_elements)
+
+even_elements = l[0::2]
+print(even_elements)
+
+
+print("4) Find occurence of each element")
+
+sample_list = [11 , 25 , 23 , 35 , 11 , 25, 45 , 60]
+
+count_dict = dict()
+
+for item in sample_list:
+  if item in count_dict:
+    count_dict[item] += 1
+  else:
+    count_dict[item] = 1
+
+print(count_dict)
