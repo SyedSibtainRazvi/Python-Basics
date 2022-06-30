@@ -59,3 +59,14 @@ def bubble_sort(arr):
 bubble_sort(arr)
 print(arr)
   
+def select_sort(arr):
+  n = len(arr)
+  for iter_num in range(n):
+    min_index = iter_num
+    for current in range(iter_num + 1, n):
+      if arr[current] < arr[min_index]:
+        min_index = current
+        arr[min_index], arr[iter_num] = arr[iter_num], arr[min_index]
+
+select_sort(arr)
+print(arr)
