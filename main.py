@@ -79,8 +79,17 @@ while i <= 10:
 
 print("7) Sum of numbers")
 sum = 0
-n = int(input("Enter num "))
+# n = int(input("Enter num "))
+n = 10
 
 for i in range(1, n + 1, 1):
   sum +=i
 print(sum)
+
+print("8) Number pattern")
+
+row = 5
+for i in range(1, row + 1, 1):
+  for j in range(1, i + 1):
+    print(j, end = ' ')
+  print(" ")
