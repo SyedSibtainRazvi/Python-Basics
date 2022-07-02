@@ -70,3 +70,17 @@ def select_sort(arr):
 
 select_sort(arr)
 print(arr)
+
+print("6) Natural numbers")
+i = 1
+while i <= 10:
+  print(i)
+  i +=1
+
+print("7) Sum of numbers")
+sum = 0
+n = int(input("Enter num "))
+
+for i in range(1, n + 1, 1):
+  sum +=i
+print(sum)
