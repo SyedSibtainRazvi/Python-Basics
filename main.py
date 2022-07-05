@@ -101,3 +101,10 @@ for num in range(10):
     for i in range(num):
         print (num, end=" ")
     print("\n")
+
+print("Asterick pattern")
+
+for i in range(6, 0, -1):
+    for j in range(0, i - 1):
+        print("*", end=' ')
+    print(" ")
