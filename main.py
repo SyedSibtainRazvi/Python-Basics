@@ -108,3 +108,18 @@ for i in range(6, 0, -1):
     for j in range(0, i - 1):
         print("*", end=' ')
     print(" ")
+
+print("Add list to set")
+
+sample_set = {"Yellow", "Orange", "Black"}
+sample_list = ["Blue", "Green", "Red"]
+
+sample_set.update(sample_list)
+print(sample_set)
+
+print("Identical numbers in two sets")
+
+set1 = {10, 20, 30, 40, 50}
+set2 = {30, 40, 50, 60, 70}
+
+print(set1.intersection(set2))
