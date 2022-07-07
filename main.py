@@ -138,3 +138,17 @@ list1 = [10, 20, 30, 40, 50]
 size = len(list1) - 1
 for i in range(size, -1, -1):
     print(list1[i])
+
+
+print("New Pattern")
+
+rows = 5
+for i in range(0, rows):
+    for j in range(0, i + 1):
+        print("*", end=' ')
+    print("\r")
+
+for i in range(rows, 0, -1):
+    for j in range(0, i - 1):
+        print("*", end=' ')
+    print("\r")
