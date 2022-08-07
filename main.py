@@ -154,55 +154,55 @@ for i in range(rows, 0, -1):
     print("\r")
 
 
-def rotateArray(arr, n, d):
-    temp = []
-    i = 0
-    while (i < d):
-        temp.append(arr[i])
-        i = i + 1
-    i = 0
-    while (d < n):
-        arr[i] = arr[d]
-        i = i + 1
-        d = d + 1
-    arr[:] = arr[: i] + temp
-    return arr
+# def rotateArray(arr, n, d):
+#     temp = []
+#     i = 0
+#     while (i < d):
+#         temp.append(arr[i])
+#         i = i + 1
+#     i = 0
+#     while (d < n):
+#         arr[i] = arr[d]
+#         i = i + 1
+#         d = d + 1
+#     arr[:] = arr[: i] + temp
+#     return arr
  
  
 
-arr = [1, 2, 3, 4, 5, 6, 7]
-print("Array after left rotation is: ", end=' ')
-print(rotateArray(arr, len(arr), 2))
+# arr = [1, 2, 3, 4, 5, 6, 7]
+# print("Array after left rotation is: ", end=' ')
+# print(rotateArray(arr, len(arr), 2))
  
-def splitArr(arr, n, k): 
-    for i in range(0, k): 
-        x = arr[0]
-        for j in range(0, n-1):
-            arr[j] = arr[j + 1]
+# def splitArr(arr, n, k): 
+#     for i in range(0, k): 
+#         x = arr[0]
+#         for j in range(0, n-1):
+#             arr[j] = arr[j + 1]
           
-        arr[n-1] = x
+#         arr[n-1] = x
           
   
-# main
-arr = [12, 10, 5, 6, 52, 36]
-n = len(arr)
-position = 2
+# # main
+# arr = [12, 10, 5, 6, 52, 36]
+# n = len(arr)
+# position = 2
   
-splitArr(arr, n, position)
+# splitArr(arr, n, position)
   
-for i in range(0, n): 
-    print(arr[i], end = ' ')
+# for i in range(0, n): 
+#     print(arr[i], end = ' ')
 
-def dedupe_v1(x):
-  y = []
-  for i in x:
-    if i not in y:
-      y.append(i)
-  return y
+# def dedupe_v1(x):
+#   y = []
+#   for i in x:
+#     if i not in y:
+#       y.append(i)
+#   return y
 
-def dedupe_v2(x):
-    return list(set(x))
+# def dedupe_v2(x):
+#     return list(set(x))
 
-a = [1,2,3,4,3,2,1]
-print(dedupe_v1(a))
-print(dedupe_v2(a))
+# a = [1,2,3,4,3,2,1]
+# print(dedupe_v1(a))
+# print(dedupe_v2(a))
