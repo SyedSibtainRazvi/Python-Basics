@@ -206,3 +206,16 @@ def dedupe_v2(x):
 a = [1,2,3,4,3,2,1]
 print(dedupe_v1(a))
 print(dedupe_v2(a))
+
+def swapList(newList):
+    size = len(newList)
+     
+    temp = newList[0]
+    newList[0] = newList[size - 1]
+    newList[size - 1] = temp
+     
+    return newList
+     
+newList = [12, 35, 9, 56, 24]
+ 
+print(swapList(newList))
