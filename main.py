@@ -230,3 +230,13 @@ List = [23, 65, 19, 90]
 pos1, pos2  = 1, 3
  
 print(swapPositions(List, pos1-1, pos2-1))
+
+
+def isMonotonic(A):
+  
+    return (all(A[i] <= A[i + 1] for i in range(len(A) - 1)) or
+            all(A[i] >= A[i + 1] for i in range(len(A) - 1)))
+  
+A = [6, 5, 4, 4]
+  
+print(isMonotonic(A))
