@@ -265,3 +265,11 @@ def compound_interest(principle, rate, time):
  
 # Driver Code
 compound_interest(10000, 10.25, 5)
+
+
+def findArea(r):
+    PI = 3.142
+    return PI * (r*r);
+ 
+# Driver method
+print("Area is %.6f" % findArea(5));
