@@ -400,3 +400,13 @@ for i in test_list:
 	counter = counter + 1
 
 print ("Length of list using naive method is : " + str(counter))
+
+
+lst=[ 1, 6, 3, 5, 3, 4 ]
+i=7
+if i in lst:
+	print("exist")
+else:
+	print("not exist")
+
+
