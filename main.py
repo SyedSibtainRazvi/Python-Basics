@@ -419,3 +419,16 @@ for ele in range(0, len(list1)):
 	total = total + list1[ele]
 
 print("Sum of all elements in given list: ", total)
+
+
+def multiplyList(myList) :
+	
+	result = 1
+	for x in myList:
+		result = result * x
+	return result
+	
+list1 = [1, 2, 3]
+list2 = [3, 2, 4]
+print(multiplyList(list1))
+print(multiplyList(list2))
