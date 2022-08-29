@@ -475,3 +475,11 @@ list1 = [2, 6, 41, 85, 0, 3, 7, 6, 10]
 N = 2
 
 Nmaxelements(list1, N)
+
+
+list1 = [10, 21, 4, 45, 66, 93]
+
+for num in list1:
+
+	if num % 2 == 0:
+		print(num, end=" ")
