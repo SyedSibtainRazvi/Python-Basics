@@ -583,3 +583,15 @@ def Cumulative(lists):
 
 lists = [10, 20, 30, 40, 50]
 print (Cumulative(lists))
+
+
+
+string = "geeks for geeks"
+substring = "geeks"
+
+s = string.split()
+
+if substring in s:
+	print("yes")
+else:
+	print("no")
