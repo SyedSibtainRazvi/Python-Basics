@@ -595,3 +595,11 @@ if substring in s:
 	print("yes")
 else:
 	print("no")
+
+
+string = "Sam quiz practice code"
+s = string.split()[::-1]
+l = []
+for i in s:
+	l.append(i)
+print(" ".join(l))
