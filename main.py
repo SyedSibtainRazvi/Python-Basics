@@ -603,3 +603,13 @@ l = []
 for i in s:
 	l.append(i)
 print(" ".join(l))
+
+
+
+list1 = [1, 2, 3]
+
+print ("List1 before deleting is : " + str(list1))
+
+list1 *= 0
+
+print ("List1 after clearing using *= 0: " + str(list1))
