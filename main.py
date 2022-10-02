@@ -689,3 +689,12 @@ print("The original list : " + str(test_list))
 res = prod([ele for sub in test_list for ele in sub])
 
 print("The total element product in lists is : " + str(res))
+
+
+
+n="This is a python language"
+s=n.split(" ")
+for i in s:
+  if len(i)%2==0:
+	   print(i)
+
