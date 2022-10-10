@@ -779,3 +779,19 @@ s2 = "abcd"
 input_string = input_string.replace(s1, s2)
 print(input_string)
 
+
+test_str="geeksforgeeks"
+s1="geeks"
+s2="abcd"
+
+s=test_str.split(s1)
+new_str=""
+
+for i in s:
+	if(i==""):
+		new_str+=s2
+	else:
+		new_str+=i
+
+print(new_str)
+
