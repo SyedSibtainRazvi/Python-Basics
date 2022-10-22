@@ -842,3 +842,26 @@ Tuple3 = ((1, "Lion"), ( 2, "Tiger"), (3, "Fox"), (4, "Wolf"))
 print("Size of Tuple1: " + str(sys.getsizeof(Tuple1)) + "bytes")
 print("Size of Tuple2: " + str(sys.getsizeof(Tuple2)) + "bytes")
 print("Size of Tuple3: " + str(sys.getsizeof(Tuple3)) + "bytes")
+
+
+
+def split_string(string):
+
+	list_string = string.split(' ')
+	
+	return list_string
+
+def join_string(list_string):
+
+	string = '-'.join(list_string)
+	
+	return string
+
+if __name__ == '__main__':
+	string = 'Geeks for Geeks'
+	
+	list_string = split_string(string)
+	print(list_string)
+
+	new_string = join_string(list_string)
+	print(new_string)
