@@ -865,3 +865,10 @@ if __name__ == '__main__':
 
 	new_string = join_string(list_string)
 	print(new_string)
+
+
+s = 'Geeks for Geeks'
+print(s.split(" "))
+print("-".join(s.split()))
+
+
