@@ -963,3 +963,20 @@ res = [(a, b) for a in test_tuple1 for b in test_tuple2]
 res = res + [(a, b) for a in test_tuple2 for b in test_tuple1]
 
 print("The filtered tuple : " + str(res))
+
+
+test_dict = {"Arushi": 22, "Anuradha": 21, "Mani": 21, "Haritha": 21}
+
+print("The dictionary before performing remove is : " + str(test_dict))
+
+removed_value = test_dict.pop('Mani')
+
+print("The dictionary after remove is : " + str(test_dict))
+print("The removed key's value is : " + str(removed_value))
+
+print('\r')
+
+removed_value = test_dict.pop('Manjeet', 'No Key found')
+
+print("The dictionary after remove is : " + str(test_dict))
+print("The removed key's value is : " + str(removed_value))
