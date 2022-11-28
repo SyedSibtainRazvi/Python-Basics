@@ -990,3 +990,17 @@ List = [23, 65, 19, 90]
 pos1, pos2 = 1, 3
 
 print(swapPositions(List, pos1-1, pos2-1))
+
+
+
+test_dict = {'gfg': [7, 6, 3],
+			'is': [2, 10, 3],
+			'best': [19, 4]}
+
+print("The original dictionary is : " + str(test_dict))
+
+res = dict()
+for key in sorted(test_dict):
+	res[key] = sorted(test_dict[key])
+
+print("The sorted dictionary : " + str(res))
