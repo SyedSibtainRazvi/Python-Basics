@@ -1019,3 +1019,12 @@ def reverse_list(arr):
 
 arr = [1, 2, 3, 4, 5, 6, 7]
 print(reverse_list(arr))
+
+def search(arr, x):
+
+	for i in range(len(arr)):
+
+		if arr[i] == x:
+			return i
+
+	return -1
