@@ -1,8 +1,6 @@
-
 from itertools import product
 
-test_dict = {'month' : [1, 2, 3],
-			'name' : ['Jan', 'Feb', 'March']}
+test_dict = {'month': [1, 2, 3], 'name': ['Jan', 'Feb', 'March']}
 
 print("The original dictionary is : " + str(test_dict))
 
@@ -10,25 +8,24 @@ res = dict(zip(test_dict['month'], test_dict['name']))
 
 print("Flattened dictionary : " + str(res))
 
+
 def UncommonWords(A, B):
 
-	count = {}
-	
-	for word in A.split():
-		count[word] = count.get(word, 0) + 1
-	
-	for word in B.split():
-		count[word] = count.get(word, 0) + 1
+    count = {}
 
-	return [word for word in count if count[word] == 1]
+    for word in A.split():
+        count[word] = count.get(word, 0) + 1
+
+    for word in B.split():
+        count[word] = count.get(word, 0) + 1
+
+    return [word for word in count if count[word] == 1]
+
 
 A = "Geeks for Geeks"
 B = "Learning from Geeks for Geeks"
 
 print(UncommonWords(A, B))
-
-
-
 
 print("1) Fibonacci Sequence")
 
@@ -592,31 +589,30 @@ for ele in test_list:
 print("List Integer Summation : " + str(res))
 
 
-
 def Repeat(x):
- _size = len(x)
- repeated = []
- for i in range(_size):
-  k = i + 1
-  for j in range(k, _size):
-   if x[i] == x[j] and x[i] not in repeated:
-    repeated.append(x[i])
- return repeated
+    _size = len(x)
+    repeated = []
+    for i in range(_size):
+        k = i + 1
+        for j in range(k, _size):
+            if x[i] == x[j] and x[i] not in repeated:
+                repeated.append(x[i])
+    return repeated
 
-list1 = [10, 20, 30, 20, 20, 30, 40,
-  50, -20, 60, 60, -20, -20]
-print (Repeat(list1))
+
+list1 = [10, 20, 30, 20, 20, 30, 40, 50, -20, 60, 60, -20, -20]
+print(Repeat(list1))
+
 
 def Cumulative(lists):
- cu_list = []
- length = len(lists)
- cu_list = [sum(lists[0:x:1]) for x in range(0, length+1)]
- return cu_list[1:]
+    cu_list = []
+    length = len(lists)
+    cu_list = [sum(lists[0:x:1]) for x in range(0, length + 1)]
+    return cu_list[1:]
+
 
 lists = [10, 20, 30, 40, 50]
-print (Cumulative(lists))
-
-
+print(Cumulative(lists))
 
 string = "geeks for geeks"
 substring = "geeks"
@@ -624,95 +620,76 @@ substring = "geeks"
 s = string.split()
 
 if substring in s:
-	print("yes")
+    print("yes")
 else:
-	print("no")
-
+    print("no")
 
 string = "Sam quiz practice code"
 s = string.split()[::-1]
 l = []
 for i in s:
-	l.append(i)
+    l.append(i)
 print(" ".join(l))
-
-
 
 list1 = [1, 2, 3]
 
-print ("List1 before deleting is : " + str(list1))
+print("List1 before deleting is : " + str(list1))
 
 list1 *= 0
 
-print ("List1 after clearing using *= 0: " + str(list1))
-
+print("List1 after clearing using *= 0: " + str(list1))
 
 list1 = [1, 2, 3]
 list2 = [5, 6, 7]
-  
-print ("List1 before deleting is : " + str(list1))
-  
-del list1[:]
-print ("List1 after clearing using del : " + str(list1))
-  
-  
-print ("List2 before deleting is : " + str(list2))
-  
-del list2[:]
-print ("List2 after clearing using del : " + str(list2))
 
+print("List1 before deleting is : " + str(list1))
+
+del list1[:]
+print("List1 after clearing using del : " + str(list1))
+
+print("List2 before deleting is : " + str(list2))
+
+del list2[:]
+print("List2 after clearing using del : " + str(list2))
 
 # Program to add two matrices using nested loop
 
-X = [[1,2,3],
-	[4 ,5,6],
-	[7 ,8,9]]
+X = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 
-Y = [[9,8,7],
-	[6,5,4],
-	[3,2,1]]
+Y = [[9, 8, 7], [6, 5, 4], [3, 2, 1]]
 
-
-result = [[0,0,0],
-		[0,0,0],
-		[0,0,0]]
+result = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
 
 for i in range(len(X)):
-	for j in range(len(X[0])):
-		result[i][j] = X[i][j] + Y[i][j]
+    for j in range(len(X[0])):
+        result[i][j] = X[i][j] + Y[i][j]
 
 for r in result:
-	print(r)
+    print(r)
 
+A = [[12, 7, 3], [4, 5, 6], [7, 8, 9]]
 
+B = [[5, 8, 1, 2], [6, 7, 3, 0], [4, 5, 9, 1]]
 
-A = [[12, 7, 3],
-	[4, 5, 6],
-	[7, 8, 9]]
-
-B = [[5, 8, 1, 2],
-	[6, 7, 3, 0],
-	[4, 5, 9, 1]]
-	
-result = [[0, 0, 0, 0],
-		[0, 0, 0, 0],
-		[0, 0, 0, 0]]
+result = [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
 
 for i in range(len(A)):
 
-	for j in range(len(B[0])):
+    for j in range(len(B[0])):
 
-		for k in range(len(B)):
-			result[i][j] += A[i][k] * B[k][j]
+        for k in range(len(B)):
+            result[i][j] += A[i][k] * B[k][j]
 
 for r in result:
-	print(r)
+    print(r)
 
-def prod(val) :
-	res = 1
-	for ele in val:
-		res *= ele
-	return res
+
+def prod(val):
+    res = 1
+    for ele in val:
+        res *= ele
+    return res
+
 
 test_list = [[1, 4, 5], [7, 3], [4], [46, 7, 3]]
 
@@ -722,88 +699,84 @@ res = prod([ele for sub in test_list for ele in sub])
 
 print("The total element product in lists is : " + str(res))
 
-
-
-n="This is a python language"
-s=n.split(" ")
+n = "This is a python language"
+s = n.split(" ")
 for i in s:
-  if len(i)%2==0:
-	   print(i)
-
-def check(string) :
-
-	string = string.lower()
-
-	vowels = set("aeiou")
-
-	s = set({})
-
-	for char in string :
-
-		
-		if char in vowels :
-			s.add(char)
-		else:
-			pass
-			
-
-	if len(s) == len(vowels) :
-		print("Accepted")
-	else :
-		print("Not Accepted")
+    if len(i) % 2 == 0:
+        print(i)
 
 
-if __name__ == "__main__" :
-	
-	string = "SEEquoiaL"
+def check(string):
 
-	check(string)
+    string = string.lower()
+
+    vowels = set("aeiou")
+
+    s = set({})
+
+    for char in string:
+
+        if char in vowels:
+            s.add(char)
+        else:
+            pass
+
+    if len(s) == len(vowels):
+        print("Accepted")
+    else:
+        print("Not Accepted")
+
+
+if __name__ == "__main__":
+
+    string = "SEEquoiaL"
+
+    check(string)
+
 
 def removeDuplicate(str):
-	s=set(str)
-	s="".join(s)
-	print("Without Order:",s)
-	t=""
-	for i in str:
-		if(i in t):
-			pass
-		else:
-			t=t+i
-		print("With Order:",t)
-	
-str="HellomynameisHello"
+    s = set(str)
+    s = "".join(s)
+    print("Without Order:", s)
+    t = ""
+    for i in str:
+        if (i in t):
+            pass
+        else:
+            t = t + i
+        print("With Order:", t)
+
+
+str = "HellomynameisHello"
 removeDuplicate(str)
-
-
 
 test_str = "GeeksforGeeks"
 
-print ("The original string is : " + test_str)
+print("The original string is : " + test_str)
 
 all_freq = {}
 for i in test_str:
     if i in all_freq:
-      all_freq[i] += 1
+        all_freq[i] += 1
 else:
-  all_freq[i] = 1
-res = min(all_freq, key = all_freq.get)
+    all_freq[i] = 1
+res = min(all_freq, key=all_freq.get)
 
-print ("The minimum of all characters in GeeksforGeeks is : " + str(res))
+print("The minimum of all characters in GeeksforGeeks is : " + str(res))
 
 test_str = "GeeksforGeeks"
 
-print ("The original string is : " + test_str)
+print("The original string is : " + test_str)
 
 all_freq = {}
 for i in test_str:
-  if i in all_freq:
-    all_freq[i] += 1
+    if i in all_freq:
+        all_freq[i] += 1
 else:
-  all_freq[i] = 1
-res = max(all_freq, key = all_freq.get)
+    all_freq[i] = 1
+res = max(all_freq, key=all_freq.get)
 
-print ("The maximum of all characters in GeeksforGeeks is : " + str(res))
-
+print("The maximum of all characters in GeeksforGeeks is : " + str(res))
 
 input_string = "geeksforgeeks"
 s1 = "geeks"
@@ -811,29 +784,29 @@ s2 = "abcd"
 input_string = input_string.replace(s1, s2)
 print(input_string)
 
+test_str = "geeksforgeeks"
+s1 = "geeks"
+s2 = "abcd"
 
-test_str="geeksforgeeks"
-s1="geeks"
-s2="abcd"
-
-s=test_str.split(s1)
-new_str=""
+s = test_str.split(s1)
+new_str = ""
 
 for i in s:
-	if(i==""):
-		new_str+=s2
-	else:
-		new_str+=i
+    if (i == ""):
+        new_str += s2
+    else:
+        new_str += i
 
 print(new_str)
 
-test_dict = {'gfg' : [5, 6, 7, 8],
-			'is' : [10, 11, 7, 5],
-			'best' : [6, 12, 10, 8],
-			'for' : [1, 2, 5]}
+test_dict = {
+    'gfg': [5, 6, 7, 8],
+    'is': [10, 11, 7, 5],
+    'best': [6, 12, 10, 8],
+    'for': [1, 2, 5]
+}
 
 print("The original dictionary is : " + str(test_dict))
-
 
 res = list(sorted({ele for val in test_dict.values() for ele in val}))
 
@@ -842,12 +815,12 @@ print("The unique values list is : " + str(res))
 
 def returnSum(myDict):
 
-	list = []
-	for i in myDict:
-		list.append(myDict[i])
-	final = sum(list)
+    list = []
+    for i in myDict:
+        list.append(myDict[i])
+    final = sum(list)
 
-	return final
+    return final
 
 
 dict = {'a': 100, 'b': 200, 'c': 300}
@@ -855,7 +828,7 @@ print("Sum :", returnSum(dict))
 
 
 def Merge(dict1, dict2):
-	return(dict2.update(dict1))
+    return (dict2.update(dict1))
 
 
 dict1 = {'a': 10, 'b': 8}
@@ -869,60 +842,58 @@ import sys
 
 Tuple1 = ("A", 1, "B", 2, "C", 3)
 Tuple2 = ("Geek1", "Raju", "Geek2", "Nikhil", "Geek3", "Deepanshu")
-Tuple3 = ((1, "Lion"), ( 2, "Tiger"), (3, "Fox"), (4, "Wolf"))
+Tuple3 = ((1, "Lion"), (2, "Tiger"), (3, "Fox"), (4, "Wolf"))
 
 print("Size of Tuple1: " + str(sys.getsizeof(Tuple1)) + "bytes")
 print("Size of Tuple2: " + str(sys.getsizeof(Tuple2)) + "bytes")
 print("Size of Tuple3: " + str(sys.getsizeof(Tuple3)) + "bytes")
 
 
-
 def split_string(string):
 
-	list_string = string.split(' ')
-	
-	return list_string
+    list_string = string.split(' ')
+
+    return list_string
+
 
 def join_string(list_string):
 
-	string = '-'.join(list_string)
-	
-	return string
+    string = '-'.join(list_string)
+
+    return string
+
 
 if __name__ == '__main__':
-	string = 'Geeks for Geeks'
-	
-	list_string = split_string(string)
-	print(list_string)
+    string = 'Geeks for Geeks'
 
-	new_string = join_string(list_string)
-	print(new_string)
+    list_string = split_string(string)
+    print(list_string)
 
+    new_string = join_string(list_string)
+    print(new_string)
 
 s = 'Geeks for Geeks'
 print(s.split(" "))
 print("-".join(s.split()))
-
 
 test_str = 'Gfg is best . Gfg also has Classes now. \
 				Classes help understand better . '
 
 print("The original string is : " + str(test_str))
 
-repl_dict = {'Gfg' : 'It', 'Classes' : 'They' }
+repl_dict = {'Gfg': 'It', 'Classes': 'They'}
 
 test_list = test_str.split(' ')
 res = set()
 for idx, ele in enumerate(test_list):
-	if ele in repl_dict:
-		if ele in res:
-			test_list[idx] = repl_dict[ele]
-		else:
-			res.add(ele)
+    if ele in repl_dict:
+        if ele in res:
+            test_list[idx] = repl_dict[ele]
+        else:
+            res.add(ele)
 res = ' '.join(test_list)
 
 print("The string after replacing : " + str(res))
-
 
 test_str = 'It is the best thing ever for CS'
 
@@ -932,7 +903,8 @@ word_list = ["best", 'CS', 'for']
 
 repl_wrd = 'gfg'
 
-res = ' '.join([repl_wrd if idx in word_list else idx for idx in test_str.split()])
+res = ' '.join(
+    [repl_wrd if idx in word_list else idx for idx in test_str.split()])
 
 print("String after multiple replace : " + str(res))
 
@@ -946,12 +918,11 @@ res = []
 test_tup = list(sorted(test_tup))
 
 for idx, val in enumerate(test_tup):
-	if idx < K or idx >= len(test_tup) - K:
-		res.append(val)
+    if idx < K or idx >= len(test_tup) - K:
+        res.append(val)
 res = tuple(res)
 
 print("The extracted values : " + str(res))
-
 
 test_tuple1 = (4, 5)
 test_tuple2 = (7, 8)
@@ -963,7 +934,6 @@ res = [(a, b) for a in test_tuple1 for b in test_tuple2]
 res = res + [(a, b) for a in test_tuple2 for b in test_tuple1]
 
 print("The filtered tuple : " + str(res))
-
 
 test_dict = {"Arushi": 22, "Anuradha": 21, "Mani": 21, "Haritha": 21}
 
@@ -981,83 +951,87 @@ removed_value = test_dict.pop('Manjeet', 'No Key found')
 print("The dictionary after remove is : " + str(test_dict))
 print("The removed key's value is : " + str(removed_value))
 
+
 def swapPositions(list, pos1, pos2):
-	
-	list[pos1], list[pos2] = list[pos2], list[pos1]
-	return list
+
+    list[pos1], list[pos2] = list[pos2], list[pos1]
+    return list
+
 
 List = [23, 65, 19, 90]
 pos1, pos2 = 1, 3
 
-print(swapPositions(List, pos1-1, pos2-1))
+print(swapPositions(List, pos1 - 1, pos2 - 1))
 
-
-
-test_dict = {'gfg': [7, 6, 3],
-			'is': [2, 10, 3],
-			'best': [19, 4]}
+test_dict = {'gfg': [7, 6, 3], 'is': [2, 10, 3], 'best': [19, 4]}
 
 print("The original dictionary is : " + str(test_dict))
 
 res = dict()
 for key in sorted(test_dict):
-	res[key] = sorted(test_dict[key])
+    res[key] = sorted(test_dict[key])
 
 print("The sorted dictionary : " + str(res))
 
-def reverse_list(arr):
-	left = 0
-	right = len(arr)-1
-	while (left < right):
-		temp = arr[left]
-		arr[left] = arr[right]
-		arr[right] = temp
-		left += 1
-		right -= 1
 
-	return arr
+def reverse_list(arr):
+    left = 0
+    right = len(arr) - 1
+    while (left < right):
+        temp = arr[left]
+        arr[left] = arr[right]
+        arr[right] = temp
+        left += 1
+        right -= 1
+
+    return arr
+
 
 arr = [1, 2, 3, 4, 5, 6, 7]
 print(reverse_list(arr))
 
+
 def search(arr, x):
 
-	for i in range(len(arr)):
+    for i in range(len(arr)):
 
-		if arr[i] == x:
-			return i
+        if arr[i] == x:
+            return i
 
-	return -1
+    return -1
 
 
 def selectionSort(array, size):
-	
-	for ind in range(size):
-		min_index = ind
 
-		for j in range(ind + 1, size):
-			if array[j] < array[min_index]:
-				min_index = j
-		(array[ind], array[min_index]) = (array[min_index], array[ind])
+    for ind in range(size):
+        min_index = ind
 
-arr = [-2, 45, 0, 11, -9,88,-97,-202,747]
+        for j in range(ind + 1, size):
+            if array[j] < array[min_index]:
+                min_index = j
+        (array[ind], array[min_index]) = (array[min_index], array[ind])
+
+
+arr = [-2, 45, 0, 11, -9, 88, -97, -202, 747]
 size = len(arr)
 selectionSort(arr, size)
 print('The array after sorting in Ascending Order by selection sort is:')
 print(arr)
 
-def bubbleSort(arr):
-	n = len(arr)
-	swapped = False
-	for i in range(n-1):
-		for j in range(0, n-i-1):
 
-			if arr[j] > arr[j + 1]:
-				swapped = True
-				arr[j], arr[j + 1] = arr[j + 1], arr[j]
-		
-		if not swapped:
-			return
+def bubbleSort(arr):
+    n = len(arr)
+    swapped = False
+    for i in range(n - 1):
+        for j in range(0, n - i - 1):
+
+            if arr[j] > arr[j + 1]:
+                swapped = True
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
+
+        if not swapped:
+            return
+
 
 arr = [64, 34, 25, 12, 22, 11, 90]
 
@@ -1065,4 +1039,11 @@ bubbleSort(arr)
 
 print("Sorted array is:")
 for i in range(len(arr)):
-	print("% d" % arr[i], end=" ")
+    print("% d" % arr[i], end=" ")
+
+from datetime import datetime
+
+now_method = datetime.now()
+
+currentTime = now_method.strftime("%H:%M:%S")
+print("Current Time =", currentTime)
